@@ -1,0 +1,284 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<title>François HUYGHE - Portfolio</title> 
+<meta name="description" content="Francois HUYGHE - director"> 
+<meta name="keywords" content="francois huyghe, video, photo, director, réalisateur, audiovisuel"> 
+<meta name="robots" content="ALL"> 
+<meta name="revisit-after" content="15 Days"> 
+<meta name="expires" content="Never"> 
+<meta name="MSSmartTagsPreventParsing" content="TRUE"> 
+<meta name="Identifier-URL" content="www.francoishuyghe.com"> 
+<meta name="Home_URL" content="http://www.francoishuyghe.com"> 
+<meta http-equiv="Content-Language" content="en-gb"> 
+<meta name="Coverage" content="Worldwide"> 
+<meta name="distribution" content="Global"> 
+<link href="css/global.css" rel="stylesheet" type="text/css" media="screen, projection"> 
+<link rel="shortcut icon" href="fav.ico"> 
+<script type="text/javascript" src="css/jquery.js"></script> 
+<style type="text/css"> 
+</style> 
+
+<script type="text/javascript" src="http://use.typekit.com/zcs5bzm.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+ 
+<script type="text/javascript"> 
+$(document).ready(function(){
+ 
+$('#scroll').hide();
+$('#about').hide();
+$('#collection').hide();
+$('#contact').hide();
+ 
+ 
+jQuery.fn.fadeToggle = function(speed, easing, callback) { 
+   return this.animate({opacity: 'toggle'}, speed, easing, callback); 
+}; 
+ 
+$('a#aboutbtn').click(function () {
+$('#video').fadeOut();
+$('#contact').fadeOut();
+$('#photo').fadeOut();
+$('#web').fadeOut();
+$('#about').fadeToggle("slow");
+return false;
+}); 
+ 
+$('a#videobtn').click(function(){
+$('#about').fadeOut();
+$('#contact').fadeOut();
+$('#photo').fadeOut();
+$('#web').fadeOut();
+$('#video').fadeToggle("Slow");
+return false;
+});
+ 
+$('a#contactbtn').click(function () {
+$('#video').fadeOut();
+$('#about').fadeOut();
+$('#photo').fadeOut();
+$('#web').fadeOut();
+$('#contact').fadeToggle("slow");
+return false;
+});
+ 
+ $('a#webtbtn').click(function () {
+$('#video').fadeOut();
+$('#about').fadeOut();
+$('#photo').fadeOut();
+$('#contact').fadeOut();
+$('#web').fadeToggle("slow");
+return false;
+});
+
+$('a#photobtn').click(function () {
+$('#video').fadeOut();
+$('#about').fadeOut();
+$('#web').fadeOut();
+$('#contact').fadeOut();
+$('#photo').fadeToggle("slow");
+return false;
+});
+
+$('a#aboutcloseButton').click(function(){
+$('#about').fadeOut();
+return false;
+});
+ 
+$('a#photocloseButton').click(function(){
+$('#photo').fadeOut();
+return false;
+});
+
+$('a#videocloseButton').click(function(){
+$('#video').fadeOut();
+return false;
+});
+
+$('a#webcloseButton').click(function(){
+$('#web').fadeOut();
+return false;
+});
+ 
+$('a#contactcloseButton').click(function(){
+$('#contact').fadeOut();
+return false;
+});
+  
+$('#video').fadeToggle("Slow");
+return false;
+});
+ 
+ 
+ 
+ 
+ 
+</script> 
+<script src="AC_RunActiveContent.js" type="text/javascript"></script> 
+ 
+</head> 
+ 
+<body bgproperties="fixed"> 
+ 
+<!-- Pieuvre
+--> 
+ 
+<div id="video-body">
+
+<div>
+<iframe src="http://player.vimeo.com/video/6653451?byline=0&amp;portrait=0&amp;color=ffffff" width="800" height="450" frameborder="0"></iframe>
+<div id="caption">
+One Take, 42 Dimensions<br/>
+Directed by François HUYGHE and Ludovic POLLET<br/>
+2009
+</div> 
+</div>
+
+<div>
+<iframe src="http://player.vimeo.com/video/16113963?byline=0&amp;portrait=0&amp;color=ffffff" width="800" height="450" frameborder="0"></iframe></iframe>
+<div id="caption">
+Showreel<br/>
+Edited by François HUYGHE<br/>
+2010
+</div> 
+</div>
+
+<div>
+<iframe src="http://player.vimeo.com/video/9115338?title=0&amp;byline=0&amp;portrait=0" width="800" height="450" frameborder="0"></iframe>
+<div id="caption">
+3D work<br/>
+Modelling and Editing by François HUYGHE<br/>
+2010
+</div> 
+</div>
+
+</div> 
+ 
+<!-- End Pieuvre
+--> 
+
+ 
+<!-- Navigation
+--> 
+ 
+<div id="Nav"> 
+<div id="Nav_menu"> 
+<div>
+<a href="index.html"><img src="images/logo.png"/></a>
+<br /><br /><br /><br />
+</div>
+
+<a href="#" id="aboutbtn"><img src="images/about.png"/></a><br /> 
+<img src="images/line.png"/><br /> 
+<a href="#" id="videobtn"><img src="images/video.png"/></a><br />
+<img src="images/line.png"/><br />  
+<a href="photo.html"><img src="images/photo.png"/></a><br /> 
+<img src="images/line.png"/><br /> 
+<a href="web.html"><img src="images/web.png"/></a><br /> 
+<img src="images/line.png"/><br /> 
+<a href="#" id="contactbtn"><img src="images/contact.png"/></a><br />
+</div> 
+ 
+</div> 
+ 
+</div> 
+ 
+<!-- End Navigation
+--> 
+ 
+<!-- About Pop Up
+--> 
+ 
+<div style="display: none;" id="about"> 
+<div id="about_close"><a href="#" id="aboutcloseButton"><img src="images/closebtn.png"></a> 
+</div> 
+ 
+<div id="boites_titre">About</div><br>  
+<br> 
+<div id="about_txt"> 
+Hi!<br><br>
+
+I'm François Huyghe, and welcome to my website.<br><br>
+
+I'm a French director, fond of documentary films. <br><br>
+
+I also do some photography and web design in my spare time.<br><br>
+
+I'm actually studying audiovisual production in Valenciennes, France.<br><br>
+
+You can navigate through some of my works by using the left panel.<br><br>
+
+Enjoy !
+</div> 
+ 
+</div> 
+<!-- End of About Pop Up
+ -->
+ 
+ 
+ 
+ <!-- Contact pop up
+ -->
+ 
+ <div style="display: none;" id="contact"> 
+<div id="contact_close"><a href="#" id="contactcloseButton"><img src="images/closebtn.png"></a> 
+</div> 
+ 
+<div id="boites_titre">Contact</div><br> 
+<br> 
+<div id="about_txt"> 
+vous pouvez bruler en enfer<br />
+<br />
+adresse e-mail<br />
+adresse tout court<br />
+<br />
+cv en ligne<br />
+<br />
+graphisme du site : Marion payen<br />
+</div> 
+ 
+</div> 
+
+<!-- End of contact Pop Up
+ -->
+
+
+<!-- video Pop Up
+ -->
+
+
+<div style="display: none;" id="video"> 
+<div id="video_close"><a href="#" id="videocloseButton"><img src="images/closebtn.png"></a> 
+</div> 
+ 
+<div id="boites_titre">Video</div><br> 
+<br> 
+<div id="video_txt"> <br />
+<p>
+&#09 From 2006, I have studied Audiovisual in Valenciennes, and specialised myself in directing and producing documentary film.<br />
+I also enjoy working on fictions, music videos or corporate videos.</p>
+<p>
+One of my short films, co-directed with Ludovic Pollet, has been selected at the International College Peace Film Festival of Chuncheon, South Korea. <br />
+We've been invited to the festival, but unfortunately haven't won any prize.</p><br />
+<br />
+<center>
+<a href="http://www.vimeo.com/user2324764" target=_blank><img src="images/vimeo-logo.png" width="50" height="15" /></a>
+</center> 
+</div>
+
+</div> 
+
+<!-- End of video Pop Up
+ -->
+
+
+
+
+
+
+</body> 
+</html>  
+
+

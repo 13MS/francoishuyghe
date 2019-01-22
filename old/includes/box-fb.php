@@ -1,0 +1,1 @@
+<div class="fb-like" data-href="http://www.francoishuyghe.com" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false"></div>
