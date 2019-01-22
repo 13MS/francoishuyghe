@@ -12,20 +12,37 @@
 
    $white: #ffffff;
    $black: #222;
+   $yellow: #FFF010;
    $blue: blue;
 
+   @font-face {
+  font-family: 'maison-neue';
+  src: url('../fonts/maisonneue-book.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/maisonneue-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/maisonneue-book.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/maisonneue-book.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/maisonneue-book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/maisonneue-book.svg#maisonneue-book') format('svg'); /* Legacy iOS */
+}
+
+
 html, body {
-    color: $white;
+    color: $black;
     font-size: 1em;
     line-height: 1.4;
 
-    background: $blue;
-    margin: 50px;
+    background: $yellow;
+    font-family: 'maison-neue', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a{
     color: inherit;
+
+    &:hover{
+        color: $blue;
+    }
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -108,12 +125,24 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body{
+    margin: 50px;
+}
+
 .textContent{
     font-size: 50px;
 }
 
 
+@media only screen and (max-width: 600px) {
+    body{
+        margin: 50px 30px;
+    }
 
+    .textContent{
+        font-size: 25px;
+    }
+}
 
 
 

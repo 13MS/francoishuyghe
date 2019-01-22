@@ -7,18 +7,29 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* line 17, ../scss/main.scss */
+@font-face {
+  font-family: 'maison-neue';
+  src: url("../fonts/maisonneue-book.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/maisonneue-book.eot?#iefix") format("embedded-opentype"), url("../fonts/maisonneue-book.woff2") format("woff2"), url("../fonts/maisonneue-book.woff") format("woff"), url("../fonts/maisonneue-book.ttf") format("truetype"), url("../fonts/maisonneue-book.svg#maisonneue-book") format("svg");
+  /* Legacy iOS */
+}
+/* line 29, ../scss/main.scss */
 html, body {
-  color: #ffffff;
+  color: #222;
   font-size: 1em;
   line-height: 1.4;
-  background: blue;
-  margin: 50px;
+  background: #FFF010;
+  font-family: 'maison-neue', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* line 26, ../scss/main.scss */
+/* line 38, ../scss/main.scss */
 a {
   color: inherit;
+}
+/* line 41, ../scss/main.scss */
+a:hover {
+  color: blue;
 }
 
 /*
@@ -30,13 +41,13 @@ a {
  *
  * Customize the background color to match your design.
  */
-/* line 40, ../scss/main.scss */
+/* line 57, ../scss/main.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 45, ../scss/main.scss */
+/* line 62, ../scss/main.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -45,7 +56,7 @@ a {
 /*
  * A better looking default horizontal rule
  */
-/* line 54, ../scss/main.scss */
+/* line 71, ../scss/main.scss */
 hr {
   display: block;
   height: 1px;
@@ -60,7 +71,7 @@ hr {
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-/* line 69, ../scss/main.scss */
+/* line 86, ../scss/main.scss */
 audio,
 canvas,
 iframe,
@@ -73,7 +84,7 @@ video {
 /*
  * Remove default fieldset styles.
  */
-/* line 82, ../scss/main.scss */
+/* line 99, ../scss/main.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -83,7 +94,7 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 92, ../scss/main.scss */
+/* line 109, ../scss/main.scss */
 textarea {
   resize: vertical;
 }
@@ -91,7 +102,7 @@ textarea {
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
-/* line 100, ../scss/main.scss */
+/* line 117, ../scss/main.scss */
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -102,18 +113,34 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* line 111, ../scss/main.scss */
+/* line 128, ../scss/main.scss */
+body {
+  margin: 50px;
+}
+
+/* line 132, ../scss/main.scss */
 .textContent {
   font-size: 50px;
 }
 
+@media only screen and (max-width: 600px) {
+  /* line 138, ../scss/main.scss */
+  body {
+    margin: 50px 30px;
+  }
+
+  /* line 142, ../scss/main.scss */
+  .textContent {
+    font-size: 25px;
+  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 /*
  * Hide visually and from screen readers
  */
-/* line 138, ../scss/main.scss */
+/* line 167, ../scss/main.scss */
 .hidden {
   display: none !important;
 }
@@ -126,7 +153,7 @@ textarea {
  *    causes content to wrap 1 word per line:
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
-/* line 151, ../scss/main.scss */
+/* line 180, ../scss/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -145,7 +172,7 @@ textarea {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 169, ../scss/main.scss */
+/* line 198, ../scss/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -160,7 +187,7 @@ textarea {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 184, ../scss/main.scss */
+/* line 213, ../scss/main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -176,7 +203,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 200, ../scss/main.scss */
+/* line 229, ../scss/main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -185,7 +212,7 @@ textarea {
   /* 2 */
 }
 
-/* line 206, ../scss/main.scss */
+/* line 235, ../scss/main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -207,7 +234,7 @@ textarea {
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  /* line 234, ../scss/main.scss */
+  /* line 263, ../scss/main.scss */
   *,
   *:before,
   *:after {
@@ -219,18 +246,18 @@ textarea {
     text-shadow: none !important;
   }
 
-  /* line 244, ../scss/main.scss */
+  /* line 273, ../scss/main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 249, ../scss/main.scss */
+  /* line 278, ../scss/main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 253, ../scss/main.scss */
+  /* line 282, ../scss/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -239,18 +266,18 @@ textarea {
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  /* line 262, ../scss/main.scss */
+  /* line 291, ../scss/main.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
-  /* line 267, ../scss/main.scss */
+  /* line 296, ../scss/main.scss */
   pre {
     white-space: pre-wrap !important;
   }
 
-  /* line 270, ../scss/main.scss */
+  /* line 299, ../scss/main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -261,18 +288,18 @@ textarea {
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  /* line 281, ../scss/main.scss */
+  /* line 310, ../scss/main.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 285, ../scss/main.scss */
+  /* line 314, ../scss/main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 290, ../scss/main.scss */
+  /* line 319, ../scss/main.scss */
   p,
   h2,
   h3 {
@@ -280,7 +307,7 @@ textarea {
     widows: 3;
   }
 
-  /* line 297, ../scss/main.scss */
+  /* line 326, ../scss/main.scss */
   h2,
   h3 {
     page-break-after: avoid;
